@@ -1,1 +1,134 @@
 @charset "UTF-8";
+
+/* 
+    Vermelho Forte #DF3232
+    Cinza Fraco #BDBDBD
+    Vermelho fraco #B02727
+    Cinza Forte #4D4545
+    Preto #000000
+
+*/
+:root{
+    --red0: #DF3232;
+    --grey0: #afafaf;
+    --red1: #B02727;
+    --grey1: rgb(44, 44, 44);
+    --black: #0e0e0e;
+    
+}
+@font-face {
+    font-family: Bebas;
+    src: url(fonts/BebasNeue-Regular.ttf) format(truetype);
+}
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body,html{
+    background-color: var(--black);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    background-color: var(--grey0);
+    width: 300px;
+    height: 650px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(163, 163, 163, 0.349);
+    transition: width .5s, height .5s;
+    transition-timing-function: ease-out;
+}
+section#login h1{
+    text-align: center;
+    background-color: var(--grey1);
+    color: var(--red1);
+    box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.322);
+    padding: 5px;
+    font-family: Bebas;
+    font-size: 1.5em;
+}
+
+section#login > div#imagem {
+    background: url(imgs/background_768x1366.png) no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: left top;
+    
+}
+
+section#login > div#form {
+    padding: 15px;
+    display: block;
+}
+
+section#login > div#form > div#form >  {
+    text-align: center;
+    background-color: #0e0e0e;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    background-color: var(--grey1);
+    color: var(--red1);
+    font-family: Bebas;
+    border: none;  
+    border-radius: 10px;
+    font-size: 2em;
+}
+form > input[type=submit]:hover{
+    background-color: var(--red1);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size 1em;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.8em;
+}
+form > a.botao:hover{
+    color: rgb(4, 0, 255);
+}
+
+form label {
+    display: none;
+}
+form > div.campo{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin: 7px 0px;
+    border-radius: 15px;
+    background-color: var(--grey1);
+    color: var(--red1);
+    font-family: Bebas;
+    border: none;  
+}
+
+form span {
+    
+}

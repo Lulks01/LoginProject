@@ -1,0 +1,40 @@
+@charset "UTF-8";
+:root{
+    --red0: #DF3232;
+    --grey0: #afafaf;
+    --red1: #B02727;
+    --grey1: rgb(44, 44, 44);
+    --black: #0e0e0e;
+}
+/* 
+
+Celular : 600px até 768px
+Desktop : 992px até 1200px 
+TV : acima de 1200px 
+*/
+
+@media screen and (min-width: 768px) {
+    section#login {
+        width: 90vw;
+        max-width: 600px;
+    }
+    section#login > div#imagem {
+        float: left;
+        width: 35%;
+        height: 100%;
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.322);
+        
+    }
+
+    section#login > div#form {
+        float: right;
+        width: 65%;
+    }
+
+    section#login h1{
+        background-color: var(--grey1);
+        font-size: 2.5em;
+        padding: 0px;
+        
+    }
+}
